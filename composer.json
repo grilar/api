@@ -1,0 +1,22 @@
+{
+    "name": "grilar/api",
+    "description": "API package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Api\\": "src"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Api\\Providers\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "ApiHelper": "Grilar\\Api\\Facades\\ApiHelper"
+            }
+        }
+    }
+}
